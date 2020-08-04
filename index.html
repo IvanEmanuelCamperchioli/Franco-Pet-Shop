@@ -4,13 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop Franco</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/assets/images/icono.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <h1>Pet Shop Franco</h1>
+    <header>       
+        <div>
+            <a href="index.html"><img src="/assets/images/logo-shnauzer.png" alt="logo pet shop franco" title="Logo"></a>
+        </div> 
+            <nav class="nav nav-pills flex-column flex-sm-row"  class="nav nav-tabs" role="tablist">
+                <a class="flex-sm-fill text-sm-center nav-link active" href="index.html">Home</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contactenos</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="farmer.html">Farmacia</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="toys.html">Juguetes</a>
+            </nav>     
     </header>
-    
-    
+    <section>
+        <img src="/assets/images/animales.jpg" alt="">
+    </section>
+    <section id="separador">
+        <h1>Bienvenido a mi tienda!!</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <p id="letra">Conozca nuestra historia...</p>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p> Franco es nuestra mascota, un amigo fiel, es un integrante más de la familia
+                            desde hace ya una década. El es el responsable de nuestro emprendimiento; 
+                            el amor a los animales y el esfuerzo por el que nos dedicamos a sus cuidados 
+                            nos han proporcionado mucha alegría y compromiso en compartir con ustedes
+                            una convivencia doméstica divertida y pacífica junto a nuestras mascotas.</p>
+                        <h5>Puede visitarnos de Lunes a Viernes de 9 a 18 hs. en nuestro local ubicado en Rio de Janeiro 300 (Caballito)</h5>
+                        <img src="assets/images/mapa-Caballito.png" alt="mapa Caballito" id="mapa" usemap="#googlemap" />
+                        <map name="googlemap">
+                            <area shape="circle" coords="270,120,50" alt="BV" href="https://www.google.com/maps/place/R%C3%ADo+de+Janeiro+300,+C1405+CCB,+Buenos+Aires/@-34.6121322,-58.432535,16.5z/data=!4m5!3m4!1s0x95bcca429815227f:0x5d302e497c2cda87!8m2!3d-34.6120762!4d-58.4303792" target="_blank">
+                        </map> 
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </section>
+    <section class="p-3 mb-2 bg-light" id="perrosGatos">
+        <h1>Perros y Gatos</h2>
+        <div id="menuPerrosGatos">
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/album-perro1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text" id="subir">$ 8.200,00</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/album-perro2.jpg" id="pupi" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text" id="puppi">$ 9.500,00</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/album-gato1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">$ 4.000,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-3 mb-2 bg-light" id="peces">
+        <h1>Peces</h2>
+        <div id="menupeces">
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/pezLeon.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text" id="leon">$ 16.797,00</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/pezKoi.png" id="pupi" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text" id="koi">$ 1.500,00</p>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/assets/images/pezPayaso.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text" id="payaso">$ 2.500,00</p>
+                </div>
+            </div>
+        </div>
+        <section class="p-3 mb-2 bg-light" id="roedores">
+            <h1>Roedores</h2>
+            <div id="menuroedores">
+                <div class="card" style="width: 25rem;">
+                    <img src="/assets/images/conejo.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">$ 1.560,00</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="/assets/images/hamster.png" id="pupi" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text" id="puppi">$ 930,00</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="/assets/images/ratita.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">$ 1.200,00</p>
+                    </div>
+                </div>
+            </div>    
+    </section>
+    <script src="/js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
