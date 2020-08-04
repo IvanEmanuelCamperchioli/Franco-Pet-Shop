@@ -88,11 +88,11 @@ nav a {
 
 }
 
-#menuPerrosGatos .card {
+#menuPerrosGatos .card-body {
     font-weight: bold;
 }
 
-#menupeces .card {
+#menupeces .card-body {
     font-weight: bold;
 
 }
@@ -127,7 +127,8 @@ section h1 {
 
 .card {
     margin-right: 1vw;
-    margin-bottom: 2vh;}
+    margin-bottom: 2vh;
+}
 
 #pupi {
     padding-top: 5vh;
@@ -184,4 +185,18 @@ section h1 {
     width: 40vw;
     height: 35vh;
     margin-top: 2vh;
+}
+
+#labrador {
+    display: inline;
+}
+
+#conejo {
+    padding-top: 5vh;
+    font-weight: bold;
+}
+
+#ratita {
+    padding-top: 10vh;
+    font-weight: bold;
 }

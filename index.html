@@ -29,7 +29,7 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button id="boton" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <p id="letra">Conozca nuestra historia...</p>
                       </button>
                     </h2>
@@ -44,7 +44,7 @@
                         <h5>Puede visitarnos de Lunes a Viernes de 9 a 18 hs. en nuestro local ubicado en Rio de Janeiro 300 (Caballito)</h5>
                         <img src="assets/images/mapa-Caballito.png" alt="mapa Caballito" id="mapa" usemap="#googlemap" />
                         <map name="googlemap">
-                            <area shape="circle" coords="270,120,50" alt="BV" href="https://www.google.com/maps/place/R%C3%ADo+de+Janeiro+300,+C1405+CCB,+Buenos+Aires/@-34.6121322,-58.432535,16.5z/data=!4m5!3m4!1s0x95bcca429815227f:0x5d302e497c2cda87!8m2!3d-34.6120762!4d-58.4303792" target="_blank">
+                            <area shape="circle" coords="270,120,70" alt="BV" href="https://www.google.com/maps/place/R%C3%ADo+de+Janeiro+300,+C1405+CCB,+Buenos+Aires/@-34.6121322,-58.432535,16.5z/data=!4m5!3m4!1s0x95bcca429815227f:0x5d302e497c2cda87!8m2!3d-34.6120762!4d-58.4303792" target="_blank">
                         </map> 
                     </div>
                   </div>
@@ -59,17 +59,26 @@
                 <div class="card-body">
                     <p class="card-text" id="subir">$ 8.200,00</p>
                 </div>
+                <div>
+                    <p>Labrador de 8 meses, bien cuidado y jugueton</p>
+                </div>
             </div>
             <div class="card" style="width: 25rem;" id="perro2">
                 <img src="/assets/images/album-perro2.jpg" id="pupi" class="card-img-top" alt="">
                 <div class="card-body">
                     <p class="card-text" id="puppi">$ 9.500,00</p>
                 </div>
+                <div>
+                    <p>Beagle de 9 meses, compañero y protector.</p>
+                </div>
             </div>
             <div class="card" style="width: 25rem;" id="perro3">
                 <img src="/assets/images/album-gato1.jpg" class="card-img-top" alt="">
                 <div class="card-body">
-                    <p class="card-text">$ 4.000,00</p>
+                    <p class="card-text">$ 2.000,00</p>
+                </div>
+                <div>
+                    <p>hermoso gato de dos meses muy cariñoso</p>
                 </div>
             </div>
         </div>
@@ -77,48 +86,63 @@
     <section class="p-3 mb-2 bg-light" id="peces">
         <h1>Peces</h2>
         <div id="menupeces">
-            <div class="card" style="width: 25rem;">
+            <div class="card" style="width: 25rem;" id="pez1">
                 <img src="/assets/images/pezLeon.png" class="card-img-top" alt="">
                 <div class="card-body">
                     <p class="card-text" id="leon">$ 16.797,00</p>
                 </div>
+                <div>
+                    <p>Pez Leon muy elegante y resistente.<b> Tener cuidado al contacto.</b></p>
+                </div>
             </div>
-            <div class="card" style="width: 25rem;">
+            <div class="card" style="width: 25rem;" id="pez2">
                 <img src="/assets/images/pezKoi.png" id="pupi" class="card-img-top" alt="">
                 <div class="card-body">
                     <p class="card-text" id="koi">$ 1.500,00</p>
                 </div>
+                <div>
+                    <p>Koi tradicional de Japon, especial para estanques, bella exposición en peceras.</p>
+                </div>
             </div>
-            <div class="card" style="width: 25rem;">
+            <div class="card" style="width: 25rem;" id="pez3">
                 <img src="/assets/images/pezPayaso.png" class="card-img-top" alt="">
                 <div class="card-body">
                     <p class="card-text" id="payaso">$ 2.500,00</p>
+                </div>
+                <div>
+                    <p>Pez payaso con su particular forma y colorido obsecuentes.</p>
                 </div>
             </div>
         </div>
         <section class="p-3 mb-2 bg-light" id="roedores">
             <h1>Roedores</h2>
             <div id="menuroedores">
-                <div class="card" style="width: 25rem;">
+                <div class="card" style="width: 25rem;" id="rata1">
                     <img src="/assets/images/conejo.png" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">$ 1.560,00</p>
-                    </div>
+                        <p class="card-text" id="conejo">$ 1.560,00</p>
+                        <p>conejo Rex, llega a pesar hasta 4 kg, pelaje extra suave.</p>
+                    </div>    
                 </div>
-                <div class="card" style="width: 25rem;">
+                <div class="card" style="width: 25rem;" id="rata2">
                     <img src="/assets/images/hamster.png" id="pupi" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text" id="puppi">$ 930,00</p>
-                    </div>
+                        <p class="card-text" id="ratita">$ 930,00</p>
+                        <p>hamster Común, llega a medir hasta 15 cm, tranquilo y muy amigable.</p>
+                    </div>    
                 </div>
-                <div class="card" style="width: 25rem;">
+                <div class="card" style="width: 25rem;" id="rata3">
                     <img src="/assets/images/ratita.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <p class="card-text">$ 1.200,00</p>
-                    </div>
+                        <p class="card-text" id="ratita">$ 1.200,00</p>
+                        <p>hamster Sirio, pelo corto y brillante.</p>
+                    </div>    
                 </div>
             </div>    
     </section>
+    <footer>
+        <h3>gracias kahahs</h3>
+    </footer>
     <script src="/js/javascript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
