@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop Franco</title>
+    <link rel="icon" href="/assets/images/icono.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+</head>
+<body id="fondoImg">
+    <header id="noFixed" >       
+        <div>
+            <a href="index.html"><img src="/assets/images/logo-shnauzer.png" alt="logo pet shop franco" title="Logo"></a>
+        </div> 
+            <nav class="nav nav-pills flex-column flex-sm-row"  class="nav nav-tabs" role="tablist">
+                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
+                <a class="flex-sm-fill text-sm-center nav-link active" href="contact.html">Contactenos</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="farmer.html">Farmacia</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="toys.html">Juguetes</a>
+            </nav>     
+    </header>
+    <section>
+        <form id="form">
+            <h1>Si quiere conocer más sobre nuestras ofertas</h1>
+            <h1>o simplemente enviarnos una consulta</h1>
+            <p>Por favor, llene el siguiente formulario</p>
+            <div class="flex">
+                <div class="form-group">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="fname" name="fname" />
+                </div>
+                <div class="form-group">
+                    <label for="lname">Apellido:</label>
+                    <input type="text" id="lname" name="lname" />
+                </div>
+                <div class="form-group">
+                    <label for="numero">Teléfono:</label>
+                    <input type="number" id="numero" name="telefono" />
+                </div>
+                <h6>Tiene perro y/o gato?</h6>
+                <div id="tipoAnimal" class="form-group">
+                    <div>
+                        <label for="perro">Perro</label>
+                        <input type="checkbox" id="perro" value="perro" name="eligeAnimal" />  
+                    </div>
+                    <div>
+                        <label for="gato">gato</label>
+                        <input type="checkbox" id="gato" value="gato" name="eligeAnimal" />  
+                    </div>
+                </div>
+                <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    quizas te interese saber...
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div id="transparente" class="card card-body">
+                        <div>
+                            <img class="cuidados" src="/assets/images/IMG-20200803-WA0137.jpg" alt="" >  
+                        </div>
+                        <div>
+                            <img class="cuidados" src="/assets/images/cuidados-gato.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">Por consultas sobre un animal en particular</label>
+              <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Anfibio</option>
+                <option>Ave</option>
+                <option>Gato</option>
+                <option>Perro</option>
+                <option>Reptil</option>
+                <option>Roedor</option>
+                <option>Pez</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">déjenos un comentario</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </section>
+    <footer id="foot">
+        <p>© 2020 Franco Pet Shop</p>
+    </footer>
+    <script src="/js/javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

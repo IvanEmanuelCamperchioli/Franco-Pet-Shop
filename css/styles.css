@@ -8,29 +8,30 @@ body {
     background-color: rgb(252, 249, 249)!important;
 }
 
-header {
-        background: rgba(255, 255, 255, 0.9);
+#fijo {
+        background: rgba(255, 255, 255, 0.86);
         width: 100%;
         position: fixed;
         z-index: 100;
 }
 
+
 header div {
     width: 100vw;
-    height: 10vh;
+    height: 18vh;
     display: flex;
     justify-content: center;
 }
 
 header img {
     width: 8vw;
-    height: 16vh;
+    height: 18vh;
     border-radius: 10%;
 }
 
 section img {
     width: 100vw;
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 
@@ -44,7 +45,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
 }
 
@@ -135,7 +136,7 @@ section h1 {
 }
 
 #koi {
-    padding-top: 5vh;
+    padding-top: 6vh;
 }
 
 #payaso {
@@ -143,7 +144,7 @@ section h1 {
 }
 
 #leon {
-    padding-top: 19vh;
+    padding-top: 21vh;
 }
 
 #puppi {
@@ -199,4 +200,77 @@ section h1 {
 #ratita {
     padding-top: 10vh;
     font-weight: bold;
+}
+
+#foot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(124, 149, 230);;
+    border: 1px solid #000;
+    padding-top: 2vh;
+    margin-top: 5vh;
+    color: rgb(255, 255, 255);
+}
+
+/***************** CSS para Contact **************************/
+
+@font-face {
+    font-family: openSans;
+    src: url(OpenSansCondensed-Light.ttf); 
+}
+
+#form {
+    padding-top: 30vh;
+}
+
+#form p {
+    font-weight: lighter;
+    font-size: 3vh;
+    margin-left: 2vw;
+}
+
+#form h1 {
+    font-family: openSans;
+    color: rgb(0, 0, 0);
+    font-size: 5vh;
+    text-align: start;
+    margin-left: 2vw;
+}
+
+.flex {
+    margin-left: 1vw;
+}
+
+#tipoAnimal {
+    display: flex;
+}
+
+#perro {
+    margin-right: 2vw;
+}
+
+#fondoImg {
+    background-image: url("/assets/images/IMG-20200803-WA0104.jpg")!important;
+    background-attachment: fixed;
+    background-size: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(241, 246, 248)!important;
+}
+
+#noFixed {
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.cuidados {
+    height: 90vh;
+    width: 40vw;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+}
+
+#transparente {
+    background: rgba(255, 255, 255, 0.0);
 }
