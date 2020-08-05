@@ -111,13 +111,13 @@ section h1 {
 }
 
 @font-face {
-    font-family: francois;
-    src: url(FrancoisOne-Regular.ttf);
+    font-family: openSans;
+    src: url(OpenSansCondensed-Light.ttf); 
 }
 
 
 #letra {
-    font-family: francois;
+    font-family: openSans;
     font-size: 2vw;
     color: rgb(0, 0, 0);
 }
@@ -215,10 +215,7 @@ section h1 {
 
 /***************** CSS para Contact **************************/
 
-@font-face {
-    font-family: openSans;
-    src: url(OpenSansCondensed-Light.ttf); 
-}
+
 
 #form {
     padding-top: 30vh;
@@ -274,3 +271,23 @@ section h1 {
 #transparente {
     background: rgba(255, 255, 255, 0.0);
 }
+
+input:invalid {
+    border: 1px solid rgb(221, 36, 36);
+  }
+
+  input:invalid:required {
+    background-image: linear-gradient(to right, rgba(177, 46, 68, 0.4), rgba(44, 163, 44, 0.4));
+  }
+  
+  input:valid {
+    border: 2px solid rgb(0, 0, 0);
+  }
+
+  #fname {
+      padding-right: 12vw;
+  }
+
+  #lname {
+      padding-right: 12vw;
+  }

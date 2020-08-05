@@ -21,22 +21,22 @@
             </nav>     
     </header>
     <section>
-        <form id="form">
-            <h1>Si quiere conocer más sobre nuestras ofertas</h1>
-            <h1>o simplemente enviarnos una consulta</h1>
+        <form id="form" action="">
+            <h1>Por consultas pongase en contacto con nosotros,</h1>
+            <h1>sus comentarios nos ayudan a seguir creciendo.</h1>
             <p>Por favor, llene el siguiente formulario</p>
             <div class="flex">
                 <div class="form-group">
                     <label for="fname">Nombre:</label>
-                    <input type="text" id="fname" name="fname" />
+                    <input type="text" id="fname" name="fname" required />
                 </div>
                 <div class="form-group">
                     <label for="lname">Apellido:</label>
-                    <input type="text" id="lname" name="lname" />
+                    <input type="text" id="lname" name="lname" required />
                 </div>
                 <div class="form-group">
                     <label for="numero">Teléfono:</label>
-                    <input type="number" id="numero" name="telefono" />
+                    <input type="number" id="numero" name="numero" required />
                 </div>
                 <h6>Tiene perro y/o gato?</h6>
                 <div id="tipoAnimal" class="form-group">
@@ -67,27 +67,29 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect2">Por consultas sobre un animal en particular</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>Anfibio</option>
-                <option>Ave</option>
-                <option>Gato</option>
-                <option>Perro</option>
-                <option>Reptil</option>
-                <option>Roedor</option>
-                <option>Pez</option>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option value="">--Por favor eliga una opción--</option>
+                <option value="Anfibios">Anfibios</option>
+                <option value="Ave">Ave</option>
+                <option value="Gato">Gato</option>
+                <option value="Perro">Perro</option>
+                <option value="Reptil">Reptil</option>
+                <option value="Roedor">Roedor</option>
+                <option value="Pez">Pez</option>
               </select>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">déjenos un comentario</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <button id="boton" type="submit" class="btn btn-primary">Enviar!</button>
+        </form>
     </section>
     <footer id="foot">
         <p>© 2020 Franco Pet Shop</p>
     </footer>
     <script src="js/javascript.js"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

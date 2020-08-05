@@ -51,3 +51,21 @@ if (document.querySelector("#accordionExample")) {
 
 
 }
+
+if (document.querySelector("#form")) {
+
+    const boton = document.querySelector('#boton')
+    const nombre = document.querySelector('#fname')
+    const apellido = document.querySelector('#lname')
+    const telefono = document.querySelector('#numero')
+
+    boton.addEventListener('click', e => { 
+        e.preventDefault()
+        const userName = nombre.value
+        const userLastName = apellido.value
+        const userTel = telefono.value
+
+        swal (`Hola ${userName} ${userLastName} nos comunicaremos al ${userTel} a la brevedad`, "gracias por contactarte con nosotros!",  "success")
+    })
+
+}
