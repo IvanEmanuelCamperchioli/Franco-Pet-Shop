@@ -251,7 +251,7 @@ section h1 {
 }
 
 #fondoImg {
-    background-image: url("/assets/images/IMG-20200803-WA0104.jpg")!important;
+    background-image: url("../assets/images/IMG-20200803-WA0104.jpg")!important;
     background-attachment: fixed;
     background-size: 80vh;
     background-repeat: no-repeat;
