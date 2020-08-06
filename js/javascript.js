@@ -10,18 +10,12 @@ if (document.querySelector("#separador")) {
     const rata2 = document.querySelector("#rata2")
     const rata3 = document.querySelector("#rata3")
 
-
-    function escuchadores(activo, desactivo, desactivo2, des, des1, des2, rat, rat1, rat2) {
+    function escuchadores(activo, ...desactivo) {
         activo.addEventListener('mouseenter', e => {
             activo.style.border = '1px solid black'
-            desactivo.style.border = ''
-            desactivo2.style.border = ''
-            des.style.border = ''
-            des1.style.border = ''
-            des2.style.border = ''
-            rat.style.border = ''
-            rat1.style.border = ''
-            rat2.style.border = ''
+            desactivo.map(desactivado => {
+                desactivado.style.border = ''
+            })
         })
     }
 
@@ -48,9 +42,9 @@ if (document.querySelector("#accordionExample")) {
             boton.innerText = 'Conozca nuestra historia...'    
         }
     })
-
-
 }
+
+///////////// Fin js Home - Inicio js Contacto
 
 if (document.querySelector("#form")) {
 
@@ -67,5 +61,67 @@ if (document.querySelector("#form")) {
 
         swal (`Hola ${userName} ${userLastName} nos comunicaremos al ${userTel} a la brevedad`, "gracias por contactarte con nosotros!",  "success")
     })
-
 }
+
+///////////// Fin js contacto - Inicio js Farmacia y Juguetes
+
+if (document.querySelector("#bodyFarmer")) {
+
+    var objectojuguetes = []
+
+
+    var objetoFarmacos = []
+
+const padre = document.querySelector('#padre')
+
+// json.response.map(articulo =>
+
+
+
+    fetch('https://apipetshop.herokuapp.com/api/articulos')
+        .then(respuesta => respuesta.json())
+        .then(json =>  {
+
+            var datos = json.response
+            console.log(datos)
+
+                // renderizado de DOM
+                    for (var i = 0; i < datos.length; i++) {
+                        if (datos[i].tipo == "Medicamento") {
+                        const imagen = document.createElement('img')
+                        imagen.setAttribute('src', datos[i].imagen)
+                        imagen.classList.add('card-img-top')
+                        const caja = document.createElement('div')        
+                        caja.classList.add('card')
+                        caja.classList.add('sectionFarmer')
+                        caja.classList.add('claseParaCartasFarmacia')
+                        const otraCaja = document.createElement('div')
+                        otraCaja.classList.add('card-body')
+                        const precio = document.createElement('h5')
+                        precio.classList.add('card-title')
+                        precio.innerText = `$ ${datos[i].precio}`
+                        const nombre = document.createElement('p')
+                        nombre.classList.add('card-text')
+                        nombre.innerText = datos[i].nombre
+                        otraCaja.appendChild(precio)
+                        otraCaja.appendChild(nombre)
+                        caja.appendChild(imagen)
+                        caja.appendChild(otraCaja)
+                        padre.appendChild(caja)
+                        }
+                    }
+                    // console.log(objetoFarmacos)
+
+            }
+    )
+
+
+            
+               
+            
+            
+
+       
+        
+}
+

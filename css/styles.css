@@ -213,12 +213,12 @@ section h1 {
     color: rgb(255, 255, 255);
 }
 
-/***************** CSS para Contact **************************/
+/***************** CSS para Contact.html **************************/
 
 
 
 #form {
-    padding-top: 30vh;
+    padding-top: 20vh;
 }
 
 #form p {
@@ -276,18 +276,106 @@ input:invalid {
     border: 1px solid rgb(221, 36, 36);
   }
 
-  input:invalid:required {
+input:invalid:required {
     background-image: linear-gradient(to right, rgba(177, 46, 68, 0.4), rgba(44, 163, 44, 0.4));
   }
   
-  input:valid {
+input:valid {
     border: 2px solid rgb(0, 0, 0);
   }
 
-  #fname {
+#fname {
       padding-right: 12vw;
   }
 
-  #lname {
+#lname {
       padding-right: 12vw;
   }
+
+.form-group {
+      margin-top: 2vh;
+  }
+
+  /********************* CSS para Farmer.html  ****************/
+
+#bodyFarmer {
+    background-image: url("../assets/images/alegria-animal.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+@font-face {
+    font-family: redRose;
+    src: url(RedRose-Light.ttf); 
+}
+
+#bodyFarmer h1 {
+    font-family: redRose;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    padding-top: 2vh;
+    padding-left: 1vw;
+}
+
+main h2 {
+    font-family: redRose;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+article h1 {
+    margin-top: 1vh;
+}
+
+#secondh1 {
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+}
+
+#bodyFarmer p {
+    padding-left: 1vw;
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+}
+
+.lista {
+    padding-left: 2vw;
+    padding-top: 1vh;
+    list-style: none;
+    color: black;
+    margin-bottom: 10vh;
+}
+
+#noStyle {
+    list-style: none;
+
+}
+
+.sectionFarmer {
+    background-image: url("../assets/images/fondo-abstracto-azul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+#logoContenido {
+    margin-top: 2vh;
+    margin-left: 45vw;
+    width: 13vw;
+    height: 28vh;
+    border-radius: 10%;
+}
+
+#articulo {
+    display: flex;
+}
+
+.claseParaCartasFarmacia {
+    width: 25vw;
+}
