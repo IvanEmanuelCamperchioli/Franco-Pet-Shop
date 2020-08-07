@@ -13,12 +13,12 @@
         <div>
             <a href="index.html"><img src="assets/images/logo-shnauzer.png" alt="logo pet shop franco" title="Logo"></a>
         </div> 
-            <nav class="nav nav-pills flex-column flex-sm-row"  class="nav nav-tabs" role="tablist">
-                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
-                <a class="flex-sm-fill text-sm-center nav-link active" href="contact.html">Contactenos</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="farmer.html">Farmacia</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="toys.html">Juguetes</a>
-            </nav>     
+        <nav class="nav nav-pills flex-column flex-sm-row"  class="nav nav-tabs" role="tablist">
+            <a class="flex-sm-fill text-sm-center nav-link" href="index.html">Home</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" href="contact.html">Contactenos</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="farmer.html">Farmacia</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="toys.html">Juguetes</a>
+        </nav>     
     </header>
     <section>
         <form id="form" action="">
@@ -28,17 +28,17 @@
             <div class="flex">
                 <div class="form-group">
                     <label for="fname">Nombre:</label>
-                    <input type="text" id="fname" name="fname" required placeholder="Campo requerido" />
+                    <input type="text" id="fname" name="fname" title="Completa este campo" placeholder="Campo requerido" minlength="4" required />
                 </div>
                 <div class="form-group">
                     <label for="lname">Apellido:</label>
-                    <input type="text" id="lname" name="lname" required placeholder="Campo requerido" />
+                    <input type="text" id="lname" name="lname" required minlength="2" placeholder="Campo requerido" />
                 </div>
                 <div class="form-group">
                     <label for="numero">Teléfono:</label>
                     <input type="number" id="numero" name="numero" required placeholder="Campo requerido" />
                 </div>
-                <h6>Tiene perro y/o gato?</h6>
+                <h6>¿Tiene perro y/o gato?</h6>
                 <div id="tipoAnimal" class="form-group">
                     <div>
                         <label for="perro">Perro</label>
@@ -50,16 +50,16 @@
                     </div>
                 </div>
                 <div>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <button id="botonInfo" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     quizas te interese saber...
                     </button>
                     <div class="collapse" id="collapseExample">
                         <div id="transparente" class="card card-body">
                             <div>
-                                <img class="cuidados" src="assets/images/IMG-20200803-WA0137.jpg" alt="" >  
+                                <img class="cuidados1" src="assets/images/IMG-20200803-WA0137.jpg" alt="" >  
                             </div>
                             <div>
-                                <img class="cuidados" src="assets/images/cuidados-gato.png" alt="">
+                                <img class="cuidados2" src="assets/images/cuidados-gato.png" alt="">
                             </div>
                         </div>
                     </div>

@@ -261,12 +261,20 @@ section h1 {
     width: 100%;
 }
 
-.cuidados {
+.cuidados1 {
     height: 90vh;
     width: 40vw;
     margin-top: 0vh;
     margin-bottom: 5vh;
 }
+
+.cuidados2 {
+    height: 90vh;
+    width: 40vw;
+    margin-top: 0vh;
+    margin-bottom: 5vh;
+}
+
 
 #transparente {
     background: rgba(255, 255, 255, 0.0);
@@ -299,7 +307,7 @@ input:valid {
   /********************* CSS para Farmer.html  ****************/
 
 #bodyFarmer {
-    background-image: url("../assets/images/alegria-animal.jpeg");
+    background-image: url("../assets/images/alegria-animal.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -378,4 +386,67 @@ article h1 {
 
 .claseParaCartasFarmacia {
     width: 25vw;
+}
+
+/******************* CSS para juguetes.html  ************/
+
+.perrosEstados {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+
+.perroHappy {
+    height: 40vh;
+    width: 20vw;
+    border-radius: 0vh;
+    margin-right: 3vw;
+    border-bottom: 1px solid black;
+}
+
+#cajaImg {
+    display: flex;
+    flex-wrap: wrap;
+    height: 47vh;
+    background: rgb(245, 245, 245);
+    padding-top: 3vh;
+}
+
+.cajasDeJuguetes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+#parrafo {
+    padding-bottom: 0vh;
+    margin-bottom: 0vh;
+    padding-left: 2vw;
+}
+
+#parrafo p {
+    font-weight: lighter;
+    font-size: 3vh;
+}
+
+@font-face {
+    font-family: italica;
+    src: url(DMSerifDisplay-Italic.ttf); 
+}
+
+#fuente {
+    font-family: italica;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/images/abstract-retro-forms-geometric.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-start;
+    align-content: flex-end;
+    margin-bottom: 4vh;
 }

@@ -34,13 +34,15 @@ if (document.querySelector("#separador")) {
 if (document.querySelector("#accordionExample")) {
 
     const boton = document.querySelector("#letra")
+    const diver = document.querySelector("#showAfterButton")
+    diver.style.display = 'none'
+
 
     boton.addEventListener('click', () => {
         if (boton.innerText == 'Conozca nuestra historia...') {
             boton.innerText = 'Gracias por visitar nuestro sitio Web'
-        } else {
-            boton.innerText = 'Conozca nuestra historia...'    
-        }
+            diver.style.display = 'block'
+        } 
     })
 }
 
@@ -63,65 +65,116 @@ if (document.querySelector("#form")) {
     })
 }
 
+if (document.querySelector("#tipoAnimal")) {
+
+    const botonInfo = document.querySelector('#botonInfo')
+    botonInfo.style.display = 'none'
+    const perro = document.querySelector('#perro')
+    const gato = document.querySelector('#gato')
+    const cuidados1 = document.querySelector('.cuidados1')
+    const cuidados2 = document.querySelector('.cuidados2')
+    cuidados1.style.display = 'none'
+    cuidados2.style.display = 'none'
+
+    function elegirMostrar(check, chechDisplay) {
+        check.addEventListener('click', e => {
+            if (check.checked) {
+                botonInfo.style.display = 'block'
+                chechDisplay.style.display = 'block'
+            } else {
+                chechDisplay.style.display = 'none'
+                botonInfo.style.display = 'none'
+            }
+
+        })
+    }
+    elegirMostrar(perro, cuidados1)
+    elegirMostrar(gato, cuidados2)
+}
+
+
+
 ///////////// Fin js contacto - Inicio js Farmacia y Juguetes
 
-if (document.querySelector("#bodyFarmer")) {
+if (document.querySelector("#datosApi")) {
 
-    var objectojuguetes = []
-
-
-    var objetoFarmacos = []
+const contieneJuguetes = document.querySelector('#contieneJuguetes')
 
 const padre = document.querySelector('#padre')
-
-// json.response.map(articulo =>
-
-
 
     fetch('https://apipetshop.herokuapp.com/api/articulos')
         .then(respuesta => respuesta.json())
         .then(json =>  {
 
             var datos = json.response
-            console.log(datos)
-
-                // renderizado de DOM
+              
+            // renderizado de DOM
+                if (document.querySelector("#padre")) {  
                     for (var i = 0; i < datos.length; i++) {
                         if (datos[i].tipo == "Medicamento") {
-                        const imagen = document.createElement('img')
-                        imagen.setAttribute('src', datos[i].imagen)
-                        imagen.classList.add('card-img-top')
-                        const caja = document.createElement('div')        
-                        caja.classList.add('card')
-                        caja.classList.add('sectionFarmer')
-                        caja.classList.add('claseParaCartasFarmacia')
-                        const otraCaja = document.createElement('div')
-                        otraCaja.classList.add('card-body')
-                        const precio = document.createElement('h5')
-                        precio.classList.add('card-title')
-                        precio.innerText = `$ ${datos[i].precio}`
-                        const nombre = document.createElement('p')
-                        nombre.classList.add('card-text')
-                        nombre.innerText = datos[i].nombre
-                        otraCaja.appendChild(precio)
-                        otraCaja.appendChild(nombre)
-                        caja.appendChild(imagen)
-                        caja.appendChild(otraCaja)
-                        padre.appendChild(caja)
-                        }
+                            const imagen = document.createElement('img')
+                            imagen.setAttribute('src', datos[i].imagen)
+                            imagen.classList.add('card-img-top')
+                            const caja = document.createElement('div')        
+                            caja.classList.add('card', 'sectionFarmer', 'claseParaCartasFarmacia')
+                            const otraCaja = document.createElement('div')
+                            otraCaja.classList.add('card-body')
+                            const precio = document.createElement('h5')
+                            precio.classList.add('card-title')
+                            precio.innerText = `$ ${datos[i].precio}`
+                            const nombre = document.createElement('p')
+                            nombre.classList.add('card-text')
+                            nombre.innerText = datos[i].nombre
+                            otraCaja.appendChild(precio)
+                            otraCaja.appendChild(nombre)
+                            caja.appendChild(imagen)
+                            caja.appendChild(otraCaja)
+                            padre.appendChild(caja)
+                        } 
                     }
-                    // console.log(objetoFarmacos)
+                }
+                    var datoJuguete = datos.slice()
+                if (document.querySelector("#contieneJuguetes")) {  
+                    for (var i = 0; i < datoJuguete.length; i++) {
+                        if (datoJuguete[i].tipo == "Juguete") {
+                            const imagenJuguete = document.createElement('img')
+                            imagenJuguete.setAttribute('src', datoJuguete[i].imagen)
+                            imagenJuguete.classList.add('card-img-top')
+                            const cajaJuguetes = document.createElement('div')        
+                            cajaJuguetes.classList.add('card', 'claseParaCartasFarmacia')
+                            const cajita = document.createElement('div')
+                            cajita.classList.add('card-body')
+                            const precioJuguete = document.createElement('h5')
+                            precioJuguete.classList.add('card-title')
+                            precioJuguete.innerText = `$ ${datoJuguete[i].precio}`
+                            const nombreJuguete = document.createElement('p')
+                            nombreJuguete.classList.add('card-text')
+                            nombreJuguete.innerText = datoJuguete[i].nombre
+                            cajita.appendChild(precioJuguete)
+                            cajita.appendChild(nombreJuguete)
+                            cajaJuguetes.appendChild(imagenJuguete)
+                            cajaJuguetes.appendChild(cajita)
+                            contieneJuguetes.appendChild(cajaJuguetes)
+                        }
 
-            }
-    )
+                    }
+                }
+        })
+}
+const contenedor = document.querySelector('#contieneJuguetes')
+contenedor.style.display = 'none'
+const boton = document.querySelector('#boton')
+boton.style.display = 'block'
+const perrosFelices = document.querySelector('#perrosFelices')
+perrosFelices.style.display = 'none'
 
-
-            
-               
-            
-            
-
-       
-        
+if (document.querySelector("#boton")) {  
+    $(document).ready(function(){
+        $('#boton').click(function(){
+            $('#boton').hide();
+            $(contenedor).slideDown(4000);
+            $(perrosFelices).slideDown(2000);
+        });
+      });
 }
 
