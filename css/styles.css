@@ -206,7 +206,7 @@ section h1 {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(124, 149, 230);;
+    background-color:  rgba(124, 149, 230, 0.7);;
     border: 1px solid #000;
     padding-top: 2vh;
     margin-top: 5vh;
