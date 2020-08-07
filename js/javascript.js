@@ -190,5 +190,8 @@ if (document.querySelector("#boton")) {
             $(perrosFelices).slideDown(2000);
         });
       });
+      $("#boton").click(function(event) {
+        $("#boton")[0].reset();
+    });
 }
 
