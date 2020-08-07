@@ -120,11 +120,18 @@ const padre = document.querySelector('#padre')
                             const otraCaja = document.createElement('div')
                             otraCaja.classList.add('card-body')
                             const precio = document.createElement('h5')
+                            const preciostock = document.createElement('h5')
+                            preciostock.innerText = `${datos[i].stock} unidades`
+                            if (datos[i].stock < 5) {
+                                preciostock.innerText = "últimas 5 unidades!"
+                                preciostock.style.color = 'red'
+                            }
                             precio.classList.add('card-title')
                             precio.innerText = `$ ${datos[i].precio}`
                             const nombre = document.createElement('p')
                             nombre.classList.add('card-text')
                             nombre.innerText = datos[i].nombre
+                            otraCaja.appendChild(preciostock)
                             otraCaja.appendChild(precio)
                             otraCaja.appendChild(nombre)
                             caja.appendChild(imagen)
@@ -145,11 +152,18 @@ const padre = document.querySelector('#padre')
                             const cajita = document.createElement('div')
                             cajita.classList.add('card-body')
                             const precioJuguete = document.createElement('h5')
+                            const preciostockF = document.createElement('h5')
+                            preciostockF.innerText = `${datoJuguete[i].stock} unidades`
+                            if (datoJuguete[i].stock < 5) {
+                                preciostockF.innerText = "últimas 5 unidades!"
+                                preciostockF.style.color = 'red'
+                            }
                             precioJuguete.classList.add('card-title')
                             precioJuguete.innerText = `$ ${datoJuguete[i].precio}`
                             const nombreJuguete = document.createElement('p')
                             nombreJuguete.classList.add('card-text')
                             nombreJuguete.innerText = datoJuguete[i].nombre
+                            cajita.appendChild(preciostockF)
                             cajita.appendChild(precioJuguete)
                             cajita.appendChild(nombreJuguete)
                             cajaJuguetes.appendChild(imagenJuguete)
