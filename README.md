@@ -1,5 +1,11 @@
 # challenge-mindhubFirstModul
-    Proyecto realizado con HTML y javascript de una página web estática, simula el sitio de un pet shop con pedidos get a una API externa proporcionada para el renderizado de los productos.
+Proyecto realizado con HTML y javascript de una página web estática, simula el sitio de un pet shop con pedidos get a una API externa proporcionada para el renderizado de los productos.
 # Desarrollado con:
-    HTML5, Javascript, Jquery, CSS3 y Boostrap.
-# Cualquier sugerencia o contribución es siempre bienvenida.
+<ul>
+    <li>HTML5</li>
+    <liJavascriptli>
+    <li>Jquery</li>
+    <li>CSS3</li>
+    <li>Boostrap</li>
+</ul><br>
+<h4>Cualquier sugerencia o contribución es siempre bienvenida 🙏<h4>  
