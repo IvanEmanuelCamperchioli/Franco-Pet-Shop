@@ -1,6 +1,6 @@
 # Franco Pet Shop
 <h3>Primer desafío de formación</h3>
-Proyecto realizado con HTML y javascript de una página web estática, simula el sitio de un pet shop con pedidos get a una API externa proporcionada para el renderizado de los productos.
+Proyecto realizado con HTML y javascript de una página web estática, simula el sitio de un pet shop con pedidos get a una API externa proporcionada para el renderizado de los productos.<br>
 # Desarrollado con 🛠️:
 <ul>
     <li>HTML5</li>
