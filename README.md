@@ -1,4 +1,4 @@
-# challenge-mindhubFirstModul
+# Franco Pet Shop
 Proyecto realizado con HTML y javascript de una página web estática, simula el sitio de un pet shop con pedidos get a una API externa proporcionada para el renderizado de los productos.
 # Desarrollado con:
 <ul>
